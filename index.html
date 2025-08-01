@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WALC 2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .content-row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .tile-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-rows: auto auto;
+      gap: 20px;
+      justify-items: center;
+      align-items: end;
+      max-width: 600px;
+      /* Removed margin: 0 auto */
+      /* Removed position: relative */
+    }
+
+    .tile-header {
+      flex: 1 1 100%;
+      text-align: center;
+      margin: 0 0 20px 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0078d4;
+    }
+
+    .tile-dropdown,
+    .tile-button-link {
+      position: relative;
+      flex: 0 0 180px;
+      display: inline-block;
+      z-index: 1;
+    }
+
+    .tile-button-link {
+      grid-row: 1;
+    }
+
+    .tile-dropdown {
+      grid-row: 2;
+    }
+
+    .tile-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 150px;
+      background-color: #0078d4;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      padding: 10px;
+      line-height: normal;
+      white-space: normal;
+      word-break: break-word;
+      cursor: pointer;
+    }
+
+    .tile-button:hover {
+      background-color: #005a9e;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 160px;
+      left: 0;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    .dropdown-content a {
+      color: #0078d4;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .tile-dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .side-image {
+      max-width: 250px;
+      max-height: 300px;
+      opacity: 0.5;
+      object-fit: contain;
+      border-radius: 12px;
+      user-select: none;
+      pointer-events: none;
+      filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+    }
+
+    @media (max-width: 700px) {
+      .content-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .side-image {
+        max-width: 80%;
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="tile-header">West Africa Logistics Conference 2025</h1>
+
+    <div class="content-row">
+      <div class="tile-container">
+        <!-- Top row tiles -->
+        <a href="https://forms.office.com/r/EGz9Qii1DG" class="tile-button tile-button-link">
+          WALC Overall Survey
+        </a>
+
+        <a href="https://forms.office.com/r/jmGpLeJ8qu" class="tile-button tile-button-link">
+          Industry Survey
+        </a>
+
+        <!-- Bottom row dropdowns -->
+        <div class="tile-dropdown">
+          <a href="https://forms.office.com/r/d9qKcUYHz2" class="tile-button tile-button-link">
+            Day 1 Panel Surveys
+          </a>
+        </div>
+
+        <div class="tile-dropdown">
+          <a href="https://forms.office.com/r/4661ZppM3W" class="tile-button tile-button-link">
+            Day 2 Panel Surveys
+          </a>
+        </div>
+
+        <div class="tile-dropdown">
+          <a href="https://forms.office.com/r/QRQaGMEnrV" class="tile-button tile-button-link">
+            Day 3 Panel Surveys
+          </a>
+        </div>
+      </div>
+
+      <img
+        class="side-image"
+        src="https://afmpetfmgth8dc4qua.z13.web.core.windows.net/background.png"
+        alt="Event Image"
+      />
+    </div>
+  </div>
+</body>
+</html>
