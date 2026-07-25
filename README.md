@@ -1,2 +1,2 @@
 # LNationJr.github.io
-WALC Survey Page
+ALCS Survey Page (formerly WALC survey page)
